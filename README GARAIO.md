@@ -17,6 +17,10 @@ Wenn man den Entwicklungsmodus verlassen will, muss ```yarn unlink react-data-gr
 
 ## Fixes oder Erweiterungen
 
-Wenn ein von uns erstellter Bugfix oder eine Erweiterung getestet und für gut befunden wurde, muss der topic branch in garaio/stable gemerged werden. **ACHTUNG: Damit gehen die Änderungen direkt in Produktion!**
+Wenn ein von uns erstellter Bugfix oder eine Erweiterung getestet und für gut befunden wurde, muss der topic branch in garaio/stable gemerged werden. Zudem soll - wenn sinnvoll - ein Pull Request erstellt werden, damit die Änderungen in react-data-grid übernommen werden können.
 
-Zudem soll - wenn sinnvoll - ein Pull Request erstellt werden, damit die Änderungen in react-data-grid übernommen werden können.
+## Neue Version releasen
+
+- Neue Version im package.json eintragen
+- Im react-data-grid Ordner den Release publishen: ```npm publish --tag canary --access public```
+- Den neuen Release in rem2 einbinden: ```yarn add @garaio/react-data-grid@<version>```
