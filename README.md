@@ -64,6 +64,6 @@ Wenn ein von uns erstellter Bugfix oder eine Erweiterung getestet und für gut b
 
 - Release Branch anlegen und Tag setzen
 - Neue Version im package.json eintragen
-- npm Login bei [mailto:@gernot.kogler@garaio-rem.ch] anfragen, falls nicht bekannt
+- ```npm login``` (credentials findet man am üblichen Ort 🙂)
 - Im react-data-grid Ordner den Release publishen: ```npm publish --tag garaio --access public```
 - Den neuen Release in rem2 einbinden: ```yarn add @garaio/react-data-grid@<version>```
