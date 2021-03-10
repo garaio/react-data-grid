@@ -43,13 +43,13 @@ function App() {
 
 - Repo <https://github.com/garaio/react-data-grid> in den lokalen Entwicklungsordner clonen
 - im react-data-grid Ordner folgende Befehle absetzen
+  - ```npm install```
   - ```npm run build```
   - ```npm run prepublishOnly```
-  - ```npm run postbuild```
   - ```yarn link```
   - ```npm link ../rem2/node_modules/react``` (WICHTIG: damit sorgen wir dafür, dass react-data-grid dieselbe react-Version benutzt wie rem2. Macht man das nicht, gibt's ganz komische Javascript-Fehler. Siehe auch <https://reactjs.org/warnings/invalid-hook-call-warning.html>)
 - im rem2 Ordner folgenden Befehl absetzen
-  - ```yarn link react-data-grid```
+  - ```yarn link @garaio/react-data-grid```
   - ```yarn install --force```
 
 Wenn am react-data-grid Änderungen vorgenommen wurden, muss im entsprechenden Ordner ```yarn run build```ausgeführt werden. Mit laufendem webpack-dev-server löst das automatisch einen reload im Browser aus und die Änderungen sind aktiv.
